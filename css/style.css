@@ -130,6 +130,9 @@ i{
     font-size: 2.2em;
     text-align: center;
     margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+
 }
 .titles::after{
     content: '___';
