@@ -50,6 +50,8 @@ body{
     margin: 0;
     font-size: 4.6em;   
     margin-left: 160px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 .txtText{
     font-size: 1.2em;
@@ -279,7 +281,9 @@ transition: .3s;
 }
 .textContact p {
     width: 460px;
-    
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+        
 }
 .formContact{
   
