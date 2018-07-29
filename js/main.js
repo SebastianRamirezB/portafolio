@@ -11,11 +11,11 @@ $(document).ready(() => {
    
 
     $('.serv').on('mouseenter', () =>{
-        $(event.currentTarget).find('.infoServ').slideDown(400);
+        $(event.currentTarget).find('.infoServ').slideDown(200);
     });
 
     $('.serv').on('mouseleave', () => {
-        $(event.currentTarget).find('.infoServ').slideUp(400);
+        $(event.currentTarget).find('.infoServ').slideUp(200);
 
     });
 
@@ -42,5 +42,16 @@ $("a").on('click', function(event) {
       });
     } // End if
   });
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
+      if (document.body.scrollTop > 740 || document.documentElement.scrollTop > 740) {
+          document.getElementById('Menu').className = "slideUp";
+      }else if(document.body.scrollTop < 810 || document.documentElement.scrollTop < 810){
+        document.getElementById('Menu').className = "menu";
+
+      }
+  }
+
 });
 
