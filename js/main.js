@@ -12,9 +12,7 @@ $(document).ready(() => {
 
     $('.serv').on('mouseenter', () =>{
         $(event.currentTarget).find('.infoServ').slideDown(200);
-    });
-
-    $('.serv').on('mouseleave', () => {
+    }).on('mouseleave', () => {
         $(event.currentTarget).find('.infoServ').slideUp(200);
 
     });
@@ -42,16 +40,26 @@ $("a").on('click', function(event) {
       });
     } // End if
   });
+
+  $('.work').on('click', () =>{
+    $('.work-overlay').show('slow');
+  });
+  $('.work-exit').on('click', () => {
+    $('.work-overlay').hide('slow');
+  });
+
   window.onscroll = function() {myFunction()};
 
   function myFunction() {
-      if (document.body.scrollTop > 740 || document.documentElement.scrollTop > 740) {
+      if (document.body.scrollTop > 710 || document.documentElement.scrollTop > 710) {
           document.getElementById('Menu').className = "slideUp";
-      }else if(document.body.scrollTop < 810 || document.documentElement.scrollTop < 810){
+      }else if(document.body.scrollTop < 709 || document.documentElement.scrollTop < 709){
         document.getElementById('Menu').className = "menu";
 
       }
   }
+
+
 
 });
 
