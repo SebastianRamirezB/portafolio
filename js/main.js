@@ -8,7 +8,7 @@ $(window).on('load', () => {
 $(document).ready(() => {
 
    
-   
+ 
 
     $('.serv').on('mouseenter', () =>{
         $(event.currentTarget).find('.infoServ').slideDown(200);
@@ -41,11 +41,24 @@ $("a").on('click', function(event) {
     } // End if
   });
 
-  $('.work').on('click', () =>{
-    $('.work-overlay').show('slow');
+  $('.work-1').on('click', () =>{
+    $('.work1-overlay').show('slow');
   });
   $('.work-exit').on('click', () => {
-    $('.work-overlay').hide('slow');
+    $('.work1-overlay').hide('slow');
+  });
+
+  $('.work-2').on('click', () =>{
+    $('.work2-overlay').show('slow');
+  });
+  $('.work-exit').on('click', () => {
+    $('.work2-overlay').hide('slow');
+  });
+  $('.work-3').on('click', () =>{
+    $('.work3-overlay').show('slow');
+  });
+  $('.work-exit').on('click', () => {
+    $('.work3-overlay').hide('slow');
   });
 
   window.onscroll = function() {myFunction()};
