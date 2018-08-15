@@ -4,6 +4,22 @@ body{
     font-family: 'Roboto', sans-serif;
    
   }
+  .burguer-button {
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    height: 40px;
+    background: #395667;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    color: white;
+    z-index: 3;
+    display: none;
+  }
 
  
 .container{
@@ -53,7 +69,7 @@ text-decoration: none;
 
 .coverPage{
     width: 100%;
-    height: 740px;
+    height: 760px;
     background-image: url('../img/sebas-baja.jpg');
     background-size: cover;
     background-position-x: -80px;
@@ -71,6 +87,7 @@ text-decoration: none;
     height: 600px;
     text-align: left;
     margin-left: 40px;
+    padding: 0 0 0 160px;
     
     
 }
@@ -78,7 +95,7 @@ text-decoration: none;
 
 .containerCover h1  {
    font-size: 1.6em;
-    margin: 120px 20px 20px 160px;
+    margin: 120px 20px 20px 0;
     font-family: 'Marck Script', cursive;
     
     
@@ -110,18 +127,21 @@ text-decoration: none;
 .txtTitle {
     margin: 0;
     font-size: 4.6em;   
-    margin-left: 160px;
+ 
     font-weight: 700;
 }
 .txtText{
     font-size: 1.2em;
-    margin-left: 160px;
+    
     width: 400px;
 }
 .services{
+    margin: 100px 0 0 0;
     width: 100%;
-    height: 740px;
-    padding: 100px 0 100px 0;
+    height: 760px;
+    padding: 80px 0 100px 0;
+ 
+
     
 }
 
@@ -204,7 +224,7 @@ i{
     margin: 0;    
     /* background: #ffcc02; */
     width: 100%;
-    height: 740px;
+    height: 760px;
     padding: 0 0 0 0;
 }
 .works{
@@ -227,6 +247,7 @@ i{
     align-items: center;
      background-image: url('../img/psiquinet.jpg');
      background-size: cover;
+    
     
  
     height: 500px;
@@ -316,7 +337,7 @@ transition: .3s;
 
 
 .contact{
-    height: 740px;
+    height: 760px;
     width: 100%;
     background-image: url(../img/backgroundC.png);
     background-size: cover;
@@ -453,9 +474,16 @@ textarea:focus, input:focus, input[type]:focus {
         text-align: left;
         font-size: 3em;
         z-index: 15; 
+
              
     
     }
+    
+    h4{
+        margin: 0;
+        padding: 0;
+    }
+   
     .containerOverlay{
         color: black;
         margin: 0;
@@ -564,11 +592,322 @@ textarea:focus, input:focus, input[type]:focus {
         
         }
 
+@media screen and (max-width: 1024px) {
+    .containerCover{      
     
+        width: 680px;
+        height: 600px;
+        text-align: left;
+        margin-left: 40px;
+        padding: 0 0 0 40px;
+
+        
+        
+    }
+.coverPage{
+    background-position-x: -170px;
+
+}
+.burguer-button {
+  
+  background: #222;
+  display: inline-block;
+
+        
+      }
+
+.menu-movil{
+    font-size: 1em; 
+}
+.slideUp{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.serv{
+    width: 300px;
+    height: 300px;
+}
+.work-size{
+    height: 360px;
+    width: 360px;
+}
+.formContact form{
+    height: 430px;
+    width: 400px;
+    margin-top: 0;
+}
+.containerImgW{
+    padding: 100px 0 0 0; 
+    width: 700px;
+    height: 380px;
     
-    
+   
+}
+
+}
+@media screen and (max-width: 800px) {
+    .services{
+        height: 540px;
+    }
+    .serv{
+        width: 250px;
+        height: 250px;
+    }
+    .work-size{
+        height: 300px;
+        width: 300px;
+    }
+    .textContact{
+        padding-left: 20px;
+        font-size: 4.6em;
+    }
+    .textContact p {
+        width: 400px;
+        
+    }
+    .formContact form{
+        height: 450px;
+        width: 250px;
+        margin-top: 0;
+    }
     
 
+    .containerImgW{
+        padding: 100px 0 0 0; 
+        width: 700px;
+        height: 300px;
+        
+       
+    }
+   
+
+}
+@media screen and (max-width: 750px) {
+.coverPage{
+   height: 600px;
+   color: white;
+   
+  
+   
+}
+.containerCover{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+
+   
+}
+.scrollCover{
+    top: 540px;
+}
+.services{
+    height: 1300px;
+}
+.serv{
+    margin: 0;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 10px;
+
+}
+.contentServ{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.textContact p {
+    width: 300px;
+    
+}
+.textContact{
+    padding-left: 20px;
+    font-size: 3.4em;
+}
+.work{
+    height: 1200px;
+}
+.works{
+    display: flex;
+    flex-direction: column;
+}
+.work-size{
+    width: 96%;
+    margin-bottom: 10px;
+    background-position-x: 0;
+
+    
+}
+.containerImgW{
+    padding: 100px 0 0 0; 
+    width: 600px;
+    height: 260px;
+    
+   
+}
+
+}
+@media screen and (max-width: 600px) {
+
+    .containerContact{
+        margin: 0;
+        padding: 0;
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .formContact{
+        height: auto;
+        width: 100%;
+
+    }
+    .textContact{
+        height: auto;
+        width: 90%;
+    }
+    .formContact form{
+        height: 450px;
+        width: 300px;
+        margin-top: 0;
+    }
+    .containerImgW{
+        padding: 100px 0 0 0; 
+        width: 500px;
+        height: 260px;
+        
+       
+    }
+    .work-display{
+        display: flex;
+        flex-direction: column;       
+    }
+   
+}
+@media screen and (max-width: 414px) {
+    .txtTitle{
+        font-size: 4em;
+    }
+    .coverPage{
+        background-position-x:460px;
 
 
+    }
+    .work-display{
+        display: flex;
+        flex-direction: column;       
+    }
+    .containerTextW{ 
+        font-size: 0.3em; 
+        width: 360px;
+        padding: 100px 0 0 30px;      
+       
+       
+    }
+    .containerImgW{
+        padding: 100px 0 0 0; 
+        width: 360px;
+        height: 260px;
+        
+       
+    }
+}
+@media screen and (max-width: 384px) {
+    .txtTitle{
+        font-size: 3.6em;
+    }
+    .coverPage{
+        background-position-x:450px;
 
+
+    }
+    .txtText{
+        font-size: 1.2em;
+        
+        width: 345px;
+    }
+    .work-display{
+        display: flex;
+        flex-direction: column;       
+    }
+    .containerTextW{ 
+        font-size: 0.3em; 
+        width: 300px;
+        padding: 100px 0 0 30px;      
+       
+       
+    }
+    .containerImgW{
+        padding: 100px 0 0 0; 
+        width: 300px;
+        height: 200px;
+        
+       
+    }
+}
+@media screen and (max-width: 375px) {
+    .txtTitle{
+        font-size: 3.6em;
+    }
+    .coverPage{
+        background-position-x:450px;
+
+
+    }
+    .txtText{
+        font-size: 1.2em;
+        
+        width: 345px;
+    }
+    .work-display{
+        display: flex;
+        flex-direction: column;       
+    }
+}
+@media screen and (max-width: 320px) {
+    .txtTitle{
+        font-size: 3.2em;
+    }
+    .coverPage{
+        background-position-x:420px;
+
+
+    }
+    .txtText{
+        font-size: 1em;
+        
+        width: 300px;
+    }
+    .serv{
+        width: 290px;
+        height: 290px;
+        margin-bottom: 10px;
+    }
+    .textContact{
+        font-size: 3em;
+    }
+    .work-display{
+        display: flex;
+        flex-direction: column;       
+    }
+    .containerTextW{ 
+        font-size: 0.3em; 
+        width: 200px;
+        padding: 100px 0 0 30px;      
+       
+       
+    }
+    .containerImgW{
+        padding: 100px 0 0 0; 
+        width: 300px;
+        height: 200px;
+        
+       
+    }
+}

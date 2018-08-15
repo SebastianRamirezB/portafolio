@@ -42,6 +42,7 @@ $("a").on('click', function(event) {
   });
 
   $('.work-1').on('click', () =>{
+    $('.containerOverlay').addClass('work-display');
     $('.work1-overlay').show('slow');
   });
   $('.work-exit').on('click', () => {
@@ -49,16 +50,20 @@ $("a").on('click', function(event) {
   });
 
   $('.work-2').on('click', () =>{
+    $('.containerOverlay').addClass('work-display');
     $('.work2-overlay').show('slow');
   });
   $('.work-exit').on('click', () => {
     $('.work2-overlay').hide('slow');
   });
   $('.work-3').on('click', () =>{
+    $('.containerOverlay').addClass('work-display');
     $('.work3-overlay').show('slow');
+    
   });
   $('.work-exit').on('click', () => {
     $('.work3-overlay').hide('slow');
+    
   });
 
   window.onscroll = function() {myFunction()};
