@@ -327,6 +327,13 @@ transition: .3s;
     
 
 }
+.movil{
+    background: rgba(255, 204, 2, .2);
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
 .exitOverlay{
     cursor: pointer;
     float: right;
@@ -593,6 +600,19 @@ textarea:focus, input:focus, input[type]:focus {
         }
 
 @media screen and (max-width: 1024px) {
+    .movil{
+        
+        display: flex;
+      
+    }
+    .work-2:hover .post-overlay, .work-1:hover .post-overlay, .work-3:hover .post-overlay{   
+        display: none;    
+    }
+    .work-2:hover, .work-1:hover, .work-3:hover{
+        transform: scale(1);    
+        z-index: 3; 
+        
+    }
     .containerCover{      
     
         width: 680px;
@@ -817,6 +837,8 @@ textarea:focus, input:focus, input[type]:focus {
         
        
     }
+    
+      
 }
 @media screen and (max-width: 384px) {
     .txtTitle{
