@@ -6,18 +6,14 @@ $(window).on('load', () => {
 
 
 $(document).ready(() => {
-
+  $('.c-list-1__item').on('click', function(event)  {
+    $(event.currentTarget).find('.c-list-1__p').slideToggle();
+    $(event.currentTarget).find('.o-button-1').slideToggle();
+    $(event.currentTarget).find('.o-button-2').slideToggle();
    
- 
-
-    $('.serv').on('mouseenter', () =>{
-        $(event.currentTarget).find('.infoServ').slideDown(200);
-    }).on('mouseleave', () => {
-        $(event.currentTarget).find('.infoServ').slideUp(200);
-
-    });
-
-
+   });
+    
+  
 // Add smooth scrolling to all links
 $("a").on('click', function(event) {
 
@@ -41,43 +37,32 @@ $("a").on('click', function(event) {
     } // End if
   });
 
-  $('.work-1').on('click', () =>{
-    $('.containerOverlay').addClass('work-display');
-    $('.work1-overlay').show('slow');
-  });
-  $('.work-exit').on('click', () => {
-    $('.work1-overlay').hide('slow');
-  });
+$('.fondeprol').on('click', () =>{
+  $('.c-list-3').show('slow');
+  $('.item-1').addClass('active');
+})
 
-  $('.work-2').on('click', () =>{
-    $('.containerOverlay').addClass('work-display');
-    $('.work2-overlay').show('slow');
-  });
-  $('.work-exit').on('click', () => {
-    $('.work2-overlay').hide('slow');
-  });
-  $('.work-3').on('click', () =>{
-    $('.containerOverlay').addClass('work-display');
-    $('.work3-overlay').show('slow');
-    
-  });
-  $('.work-exit').on('click', () => {
-    $('.work3-overlay').hide('slow');
-    
-  });
 
-  window.onscroll = function() {myFunction()};
+$('.usd').on('click', () =>{
+  $('.c-list-3').show('slow');  
+  $('.item-2').addClass('active');
+})
+
+$('.exitOverlay').on('click', () => {  
+  $('.c-list-3').hide('slow');
+  $('.item-1').removeClass('active');
+  $('.item-2').removeClass('active');
+  
+});
+});
+
+window.onscroll = function() {myFunction()};
 
   function myFunction() {
       if (document.body.scrollTop > 710 || document.documentElement.scrollTop > 710) {
-          document.getElementById('Menu').className = "slideUp";
+          document.getElementById('menu').className = "c-nav-1";
       }else if(document.body.scrollTop < 709 || document.documentElement.scrollTop < 709){
-        document.getElementById('Menu').className = "menu";
+        document.getElementById('menu').className = "o-slideUp-1";
 
       }
   }
-
-
-
-});
-
