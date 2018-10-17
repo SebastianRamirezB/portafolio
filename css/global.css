@@ -223,6 +223,11 @@ li {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+@media only screen and (max-width: 800px) {
+  .c-block-1__scroll {
+    top: 76%;
+  }
+}
 .c-block-1__scroll a i {
   font-size: 60px;
 }
