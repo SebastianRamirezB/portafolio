@@ -146,14 +146,10 @@ li {
   min-height: 732px;
   max-height: 900px;
 }
-@media only screen and (max-width: 1024px) {
-  .c-block-1 {
-    height: 760px;
-  }
-}
 @media only screen and (max-width: 800px) {
   .c-block-1 {
     background: #fff;
+    min-height: 400px;
   }
 }
 .c-block-1__cont {
