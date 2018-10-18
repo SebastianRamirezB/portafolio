@@ -6,6 +6,17 @@ $(window).on('load', () => {
 
 
 $(document).ready(() => {
+
+  $('.o-button-3').on('click', event =>{
+    $('.c-nav-2').toggleClass('c-nav-2__active');
+    
+  })
+  $('.c-nav-2__li').on('click', event =>{
+    $('.c-nav-2').toggleClass('c-nav-2__active');
+    
+  })
+
+
   $('.c-list-1__item').on('click', function(event)  {
     $(event.currentTarget).find('.c-list-1__p').slideToggle();
     $(event.currentTarget).find('.o-button-1').slideToggle();
@@ -33,6 +44,7 @@ $("a").on('click', function(event) {
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
+        
       });
     } // End if
   });
@@ -60,9 +72,10 @@ window.onscroll = function() {myFunction()};
 
   function myFunction() {
       if (document.body.scrollTop > 710 || document.documentElement.scrollTop > 710) {
-          document.getElementById('menu').className = "c-nav-1";
+          document.getElementById('menu').className = "c-nav-1__active";
       }else if(document.body.scrollTop < 709 || document.documentElement.scrollTop < 709){
-        document.getElementById('menu').className = "o-slideUp-1";
+        document.getElementById('menu').className = "c-nav-1";
 
       }
   }
+
