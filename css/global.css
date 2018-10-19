@@ -79,7 +79,7 @@ i {
 .c-nav-1__img {
   width: 40px;
   height: 40px;
-  padding-left: 200px;
+  padding-left: 180px;
 }
 .c-nav-1 {
   width: 100%;
@@ -110,7 +110,7 @@ i {
 }
 .c-nav-1__li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 .c-nav-2 {
   position: fixed;
@@ -207,8 +207,19 @@ i {
 }
 @media only screen and (max-width: 800px) {
   .c-block-1 {
-    background: #fff;
+    background-image: url("../images/foto-movil.jpg");
+    background-position-x: 0;
     min-height: 400px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .c-block-1 {
+    background-position-x: -20px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .c-block-1 {
+    background-position-x: -50px;
   }
 }
 .c-block-1__cont {
@@ -312,8 +323,8 @@ i {
 }
 @media only screen and (max-width: 414px) {
   .c-block-2 {
-    height: 1300px;
-    max-height: 1300px;
+    height: 1200px;
+    max-height: 1200px;
   }
 }
 .c-block-3 {
@@ -591,6 +602,7 @@ i {
   height: 400px;
   -webkit-box-shadow: 0px 5px 22px 0px rgba(0,0,0,0.3);
   box-shadow: 0px 5px 22px 0px rgba(0,0,0,0.3);
+  cursor: pointer;
 }
 .c-list-1__item:last-child {
   margin-right: 0;
@@ -665,6 +677,7 @@ i {
   width: 100%;
   height: 500px;
   z-index: 1;
+  cursor: pointer;
 }
 @media only screen and (max-width: 800px) {
   .c-list-2__item {
@@ -685,6 +698,9 @@ i {
     height: 300px;
   }
 }
+.c-list-2__title {
+  font-size: 2em;
+}
 .c-list-2__img {
   width: 100%;
   height: 100%;
@@ -692,7 +708,7 @@ i {
 .c-list-2__content {
   position: absolute;
   top: 0;
-  background-color: rgba(255,204,2,0.4);
+  background-color: rgba(255,204,2,0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -800,6 +816,12 @@ i {
   .c-list-3__ul {
     padding: 0;
     font-size: 0.6em;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .c-list-3__ul li {
+    display: inline;
+    padding: 0 10px;
   }
 }
 @media only screen and (max-width: 375px) {
