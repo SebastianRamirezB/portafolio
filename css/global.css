@@ -310,6 +310,7 @@ i {
   animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  z-index: 2;
 }
 @media only screen and (max-width: 800px) {
   .c-block-1__scroll {
