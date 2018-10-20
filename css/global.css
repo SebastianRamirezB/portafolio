@@ -207,24 +207,14 @@ i {
 }
 @media only screen and (max-width: 800px) {
   .c-block-1 {
-    background-image: url("../images/foto-movil.jpg");
-    background-position-x: 0;
+    background: #fff;
     min-height: 400px;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .c-block-1 {
-    background-position-x: -20px;
-  }
-}
-@media only screen and (max-width: 330px) {
-  .c-block-1 {
-    background-position-x: -50px;
   }
 }
 .c-block-1__cont {
   margin: 0 0 0 14%;
   width: 30%;
+  z-index: 1;
 }
 @media only screen and (max-width: 1024px) {
   .c-block-1__cont {
@@ -278,6 +268,34 @@ i {
 @media only screen and (max-width: 375px) {
   .c-block-1__title {
     font-size: 3.2em;
+  }
+}
+.c-block-1__img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .c-block-1__img {
+    display: block;
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .c-block-1__img {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .c-block-1__img {
+    width: 100%;
+    height: 90%;
   }
 }
 .c-block-1__scroll {
