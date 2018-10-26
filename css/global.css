@@ -45,7 +45,7 @@ i {
   position: fixed;
   top: 8px;
   left: 8px;
-  z-index: 2;
+  z-index: 10;
 }
 @media only screen and (max-width: 800px) {
   .o-button-3 {
@@ -228,8 +228,8 @@ i {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(255,204,2,0.8);
-  z-index: 2;
+  background-color: rgba(255,204,2,0.9);
+  z-index: 9;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -243,11 +243,13 @@ i {
 .c-nav-2__li {
   list-style: none;
   text-align: center;
+  margin-bottom: 16px;
 }
 .c-nav-2__a {
   font-size: 2em;
   color: #000;
   text-decoration: none;
+  font-weight: 700;
 }
 @-moz-keyframes slideUp {
   0% {
@@ -299,7 +301,6 @@ i {
   align-items: center;
   background-image: url("../images/sebas-baja.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position-x: -90px;
   width: 100%;
   height: 100vh;
@@ -385,18 +386,17 @@ i {
 @media only screen and (max-width: 800px) {
   .c-block-1__img {
     display: block;
-    width: 600px;
+    width: 500px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .c-block-1__img {
-    width: 400px;
+    width: 420px;
   }
 }
 @media only screen and (max-width: 414px) {
   .c-block-1__img {
     width: 100%;
-    height: 90%;
   }
 }
 .c-block-1__scroll {
@@ -673,6 +673,7 @@ i {
   outline-color: #ffcc02;
 }
 .c-form-1__button {
+  border: 1px solid #808080;
   font-size: 1.5em;
   border-radius: 5px;
   margin-top: 10px;
@@ -729,8 +730,8 @@ i {
 }
 @media only screen and (max-width: 1024px) {
   .c-list-1__item {
-    width: 320px;
-    height: 320px;
+    width: 380px;
+    height: 380px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -774,6 +775,16 @@ i {
 }
 .c-list-1__p {
   display: none;
+}
+@media only screen and (max-width: 414px) {
+  .c-list-1__p {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .c-list-1__p {
+    font-size: 0.8em;
+  }
 }
 .c-list-2 {
   display: -webkit-box;
@@ -850,7 +861,7 @@ i {
   background-color: rgba(0,0,0,0.2);
 }
 .c-list-3 {
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.9);
   padding: 20px;
   position: fixed;
   left: 0;
@@ -859,6 +870,7 @@ i {
   top: 0;
   color: #000;
   text-align: left;
+  padding: 0 40px;
   font-size: 3em;
   z-index: 15;
   display: none;
@@ -905,8 +917,34 @@ i {
   right: 0;
   padding: 20px 30px;
 }
+.c-list-3__enlace {
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  padding: 2px 5px;
+  width: 100px;
+  text-align: center;
+  color: #000;
+  font-size: 0.8em;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.c-list-3__enlace:hover {
+  width: 200px;
+}
+@media only screen and (max-width: 480px) {
+  .c-list-3__enlace {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .c-list-3__enlace {
+    font-size: 0.6em;
+  }
+}
 @media only screen and (max-width: 480px) {
   .c-list-3__title {
+    margin-top: 0;
     font-size: 0.8em;
   }
 }
@@ -928,7 +966,14 @@ i {
 }
 @media only screen and (max-width: 800px) {
   .c-list-3__ul {
-    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     font-size: 0.8em;
   }
 }
@@ -975,6 +1020,13 @@ i {
   }
 }
 .c-list-3__content-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
 }
 .c-list-3__content-2 {
