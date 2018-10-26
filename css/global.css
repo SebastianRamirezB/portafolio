@@ -399,6 +399,11 @@ i {
     width: 100%;
   }
 }
+@media only screen and (max-width: 375px) {
+  .c-block-1__img {
+    height: 86%;
+  }
+}
 .c-block-1__scroll {
   position: absolute;
   top: 86%;
